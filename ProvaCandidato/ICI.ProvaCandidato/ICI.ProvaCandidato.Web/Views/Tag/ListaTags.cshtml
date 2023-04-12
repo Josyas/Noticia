@@ -1,0 +1,51 @@
+﻿@using ICI.ProvaCandidato.Web.Models.DTO;
+@model List<TagDTO>
+
+<h2>Lista de Tags</h2>
+
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["AlertMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <script>
+            setTimeout(function () {
+                $(".alert").alert('close');
+            }, 4000);
+        </script>
+    </div>
+}
+
+
+<table id="myTable" class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Descrição</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var tag in Model)
+        {
+            <tr>
+                <td>@tag.Id</td>
+                <td>@tag.Descricao</td>
+                <td>
+                    <form asp-action="ApagarTag" method="post">
+                        <input type="hidden" name="id" value="@tag.Id" />
+                        <button type="submit" class="btn btn-danger">Apagar</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts{
+    <script>
+        let table = new DataTable('#myTable');
+    </script>
+}
