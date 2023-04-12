@@ -1,4 +1,5 @@
-﻿@model ICI.ProvaCandidato.Web.Models.DTO.TagDTO
+﻿@using ICI.ProvaCandidato.Web.AutoMapper.DTO;
+@model TagDTO
 
 @if (TempData["AlertMessage"] != null)
 {
@@ -24,7 +25,7 @@
     </div>
 
     <div>
-        <br />
+        <br/>
         <button type="submit" class="btn btn-primary">Salvar</button>
     </div>
 }

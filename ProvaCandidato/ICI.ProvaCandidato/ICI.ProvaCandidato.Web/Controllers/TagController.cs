@@ -1,4 +1,4 @@
-﻿using ICI.ProvaCandidato.Web.Models.DTO;
+﻿using ICI.ProvaCandidato.Web.AutoMapper.DTO;
 using ICI.ProvaCandidato.Web.Models.Interface;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
@@ -14,7 +14,7 @@ namespace ICI.ProvaCandidato.Web.Controllers
         {
             _tagModel = tagModel;
         }
-
+        
         public IActionResult Index()
         {
             return View();
@@ -35,25 +35,41 @@ namespace ICI.ProvaCandidato.Web.Controllers
             }
 
             TempData["AlertMessage"] = "nome da tag já está em uso.";
+
             return RedirectPermanent("https://localhost:44340/Tag");
         }
 
         public async Task<ActionResult> ApagarTag(int id)
         {
-            await _tagModel.ApagarTagId(id);
+            var tagVinculada = await ValidacaoTagVinculada(id);
 
-            TempData["AlertMessage"] = "Tag apagado com sucesso.";
+            if(tagVinculada == false)
+            {
+                await _tagModel.ApagarTagId(id);
+
+                TempData["AlertMessage"] = "Tag apagado com sucesso.";
+            }
+
+            TempData["AlertMessage"] = "Tag está vinculada a uma notícia.";
 
             return Redirect("https://localhost:44340/Tag/ListaTags");
         }
 
-        public async Task<ActionResult> EditarTag(int id)
+        [HttpPost]
+        public async Task<ActionResult> EditarTag(TagDTO tag)
         {
-            var alterarTag = await _tagModel.AlterarTag(id);
+            if (ModelState.IsValid)
+            {
+                await _tagModel.AlterarTag(tag);
 
-            TempData["AlertMessage"] = "Tag atualizada com sucesso!";
+                TempData["AlertMessage"] = "Tag atualizada com sucesso!";
 
-            return View(alterarTag);
+                return RedirectToAction("ListaTags");
+            }
+            else
+            {
+                return View("EditarTag", tag);
+            }
         }
 
         public async Task<IActionResult> ListaTags()
@@ -68,15 +84,11 @@ namespace ICI.ProvaCandidato.Web.Controllers
             return View(listaTagDTO);
         }
 
-        public async Task<IActionResult> PesquisarTagNoticia(TagDTO tagDTO)
+        public async Task<bool> ValidacaoTagVinculada(int idTag)
         {
-            if (ModelState.IsValid)
-            {
-                await _tagModel.PesquisarListaTag(tagDTO.Descricao);
-                return Ok();
-            }
+            var tag = await _tagModel.TagVinculada(idTag);
 
-            return NotFound("tag não encontrada.");
+            return tag;
         }
     }
 }

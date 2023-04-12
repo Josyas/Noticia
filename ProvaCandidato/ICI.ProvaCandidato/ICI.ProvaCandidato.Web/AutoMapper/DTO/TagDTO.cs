@@ -1,4 +1,4 @@
-﻿namespace ICI.ProvaCandidato.Web.Models.DTO
+﻿namespace ICI.ProvaCandidato.Web.AutoMapper.DTO
 {
     public class TagDTO
     {

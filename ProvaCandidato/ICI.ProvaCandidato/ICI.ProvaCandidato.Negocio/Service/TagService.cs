@@ -27,11 +27,9 @@ namespace ICI.ProvaCandidato.Negocio.Service
             return tag;
         }
 
-        public async Task<Tag> EditarTag(int id)
+        public async Task<Tag> EditarTag(Tag tag)
         {
-            var alterarTag = await _tagRepositorio.ListaTagId(id);
-
-            await _tagRepositorio.AlterarTag(alterarTag);
+            var alterarTag = await _tagRepositorio.AlterarTag(tag);
 
             return alterarTag;
         }
@@ -50,11 +48,11 @@ namespace ICI.ProvaCandidato.Negocio.Service
             return listaTags;
         }
 
-        public async Task<List<Tag>> PesquisaTag(string buscaTag)
+        public async Task<bool> TagNoticiaVinculada(int idTag)
         {
-            var localizarTag = await _tagRepositorio.PesquisarTag(buscaTag);
+            var tag = await _tagRepositorio.TagVinculada(idTag);
 
-            return localizarTag;
+            return tag;
         }
     }
 }

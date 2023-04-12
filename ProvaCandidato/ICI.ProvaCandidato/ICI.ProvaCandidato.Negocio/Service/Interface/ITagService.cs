@@ -7,9 +7,9 @@ namespace ICI.ProvaCandidato.Negocio.Service.Interface
     public interface ITagService
     {
         Task<Tag> CadastraTag(string descricao);
-        Task<Tag> EditarTag(int id);
+        Task<Tag> EditarTag(Tag tag);
         Task ApagarTag(int id);
         Task<List<Tag>> ListaTag();
-        Task<List<Tag>> PesquisaTag(string buscaTag);
+        Task<bool> TagNoticiaVinculada(int idTag);
     }
 }

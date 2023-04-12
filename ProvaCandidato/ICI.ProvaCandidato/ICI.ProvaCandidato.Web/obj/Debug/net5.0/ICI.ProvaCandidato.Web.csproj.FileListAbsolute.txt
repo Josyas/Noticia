@@ -37,14 +37,6 @@ C:\Projetos\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\n
 C:\Projetos\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.pdb
 C:\Projetos\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.genruntimeconfig.cache
 C:\Projetos\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.csproj.CopyComplete
-C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.csproj.AssemblyReference.cache
-C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.AssemblyInfoInputs.cache
-C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.AssemblyInfo.cs
-C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.csproj.CoreCompileInputs.cache
-C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.RazorAssemblyInfo.cache
-C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.RazorAssemblyInfo.cs
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\appsettings.json
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\ICI.ProvaCandidato.Web.exe
@@ -55,6 +47,8 @@ C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandi
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\ICI.ProvaCandidato.Web.pdb
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\ICI.ProvaCandidato.Web.Views.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\ICI.ProvaCandidato.Web.Views.pdb
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\Humanizer.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -70,6 +64,9 @@ C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandi
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\Microsoft.Extensions.Options.dll
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\Microsoft.Extensions.Primitives.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\Microsoft.Identity.Client.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
@@ -94,6 +91,7 @@ C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandi
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\System.Runtime.Caching.dll
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\de\Microsoft.CodeAnalysis.resources.dll
@@ -165,6 +163,14 @@ C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandi
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\ICI.ProvaCandidato.Negocio.dll
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\ICI.ProvaCandidato.Dados.pdb
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\bin\Debug\net5.0\ICI.ProvaCandidato.Negocio.pdb
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.csproj.AssemblyReference.cache
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.AssemblyInfoInputs.cache
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.AssemblyInfo.cs
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.csproj.CoreCompileInputs.cache
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.RazorAssemblyInfo.cache
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.RazorAssemblyInfo.cs
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\scopedcss\bundle\ICI.ProvaCandidato.Web.styles.css
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\staticwebassets\ICI.ProvaCandidato.Web.StaticWebAssets.Manifest.cache
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\staticwebassets\ICI.ProvaCandidato.Web.StaticWebAssets.Pack.cache

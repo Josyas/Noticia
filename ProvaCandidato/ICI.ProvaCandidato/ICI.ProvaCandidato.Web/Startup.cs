@@ -10,6 +10,9 @@ using Microsoft.Extensions.DependencyInjection;
 using ICI.ProvaCandidato.Dados.Data;
 using ICI.ProvaCandidato.Web.Models;
 using ICI.ProvaCandidato.Web.Models.Interface;
+using ICI.ProvaCandidato.Dados.Entities;
+using ICI.ProvaCandidato.Web.AutoMapper.DTO;
+using System.Reflection;
 
 namespace ICI.ProvaCandidato.Web
 {
@@ -30,6 +33,10 @@ namespace ICI.ProvaCandidato.Web
             services.AddScoped<ITagRepositorio, TagRepositorio>();
             services.AddScoped<ITagService, TagService>();
             services.AddScoped<ITagModel, TagModel>();
+            services.AddAutoMapper(cfg =>
+            {
+                cfg.CreateMap<TagDTO, Tag>();
+            }, Assembly.GetExecutingAssembly());
         }
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
