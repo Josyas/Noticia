@@ -41,7 +41,7 @@ namespace ICI.ProvaCandidato.Web.Controllers
             {
                 await _noticiaModel.CadastrarNoticia(noticiaDTO.Titulo, noticiaDTO.Texto, noticiaDTO.TagSelecionadoId, noticiaDTO.UsuarioSelecionadoId);
 
-                TempData["AlertMessage"] = "Tag cadastrada com sucesso!";
+                TempData["AlertMessage"] = "Notícia cadastrada com sucesso.";
 
                 return RedirectToAction("ListaNoticia");
             }
@@ -71,7 +71,7 @@ namespace ICI.ProvaCandidato.Web.Controllers
             {
                 await _noticiaModel.EditarNoticia(noticiaDTO);
 
-                TempData["AlertMessage"] = "Tag atualizada com sucesso!";
+                TempData["AlertMessage"] = "Noticia atualizada com sucesso.";
 
                 return RedirectToAction("ListaTags");
             }

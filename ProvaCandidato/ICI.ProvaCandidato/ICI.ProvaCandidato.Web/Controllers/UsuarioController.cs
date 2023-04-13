@@ -25,7 +25,7 @@ namespace ICI.ProvaCandidato.Web.Controllers
             {
                 await _usuarioModel.CadastraUsuario(usuarioDTO.Nome, usuarioDTO.Email, usuarioDTO.Senha);
 
-                TempData["AlertMessage"] = "Tag cadastrada com sucesso!";
+                TempData["AlertMessage"] = "Tag cadastrada com sucesso.";
 
                 return RedirectPermanent("https://localhost:44340/Usuario");
             }

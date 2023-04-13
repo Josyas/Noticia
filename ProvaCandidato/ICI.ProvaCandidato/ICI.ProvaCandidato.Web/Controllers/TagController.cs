@@ -64,7 +64,7 @@ namespace ICI.ProvaCandidato.Web.Controllers
             {
                 await _tagModel.AlterarTag(tag);
 
-                TempData["AlertMessage"] = "Tag atualizada com sucesso!";
+                TempData["AlertMessage"] = "Tag atualizada com sucesso.";
 
                 return RedirectToAction("ListaTags");
             }
