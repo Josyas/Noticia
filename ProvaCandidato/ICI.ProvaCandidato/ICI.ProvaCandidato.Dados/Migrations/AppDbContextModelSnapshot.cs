@@ -29,7 +29,8 @@ namespace ICI.ProvaCandidato.Dados.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Texto")
-                        .HasColumnType("VARCHAR");
+                        .HasMaxLength(8000)
+                        .HasColumnType("VARCHAR(8000)");
 
                     b.Property<string>("Titulo")
                         .HasMaxLength(250)

@@ -1,0 +1,47 @@
+﻿@using ICI.ProvaCandidato.Web.AutoMapper.DTO;
+@model NoticiaDTO
+
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["AlertMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <script>
+            setTimeout(function () {
+                $(".alert").alert('close');
+            }, 4000);
+        </script>
+    </div>
+}
+
+@using (Html.BeginForm("CadastrarNoticia", "Noticia", FormMethod.Post))
+{
+    <div class="form-group">
+        @Html.LabelFor(m => m.Titulo, new { @class = "control-label" })
+        @Html.TextBoxFor(m => m.Titulo, new { @class = "form-control", required = "required" })
+        @Html.LabelFor(m => m.Texto, new { @class = "control-label" })
+        @Html.TextBoxFor(m => m.Texto, new { @class = "form-control", required = "required" })
+        @Html.ValidationMessageFor(m => m.Titulo, "", new { @class = "text-danger" })
+        @Html.ValidationMessageFor(m => m.Texto, "", new { @class = "text-danger" })
+        @Html.LabelFor(m => m.UsuarioSelecionadoId)
+        @Html.DropDownListFor(m => m.UsuarioSelecionadoId, new SelectList(Model.Usuarios, "Id", "Nome"), "-- Selecione --", new { @class = "form-control" })
+    </div>
+   @* <div>
+    @using (Html.BeginForm("Index", "Noticia", FormMethod.Post))
+    {
+        @Html.LabelFor(m => m.UsuarioSelecionadoId)
+        @Html.DropDownListFor(m => m.UsuarioSelecionadoId, new SelectList(Model.Usuarios, "Id", "Nome"), "-- Selecione --", new { @class = "form-control" })
+    }
+    </div>*@
+  
+    <div>
+        <br />
+        <button type="submit" class="btn btn-primary">Salvar</button>
+    </div>
+}
+
+
+
+

@@ -19,7 +19,7 @@ namespace ICI.ProvaCandidato.Dados.Repository
 
         public async Task IncluirTag(Tag tag)
         {
-            _dbContext.Add(tag);
+            await _dbContext.AddAsync(tag);
 
             await _dbContext.SaveChangesAsync();
         }
@@ -40,20 +40,20 @@ namespace ICI.ProvaCandidato.Dados.Repository
             await _dbContext.SaveChangesAsync();
         }
 
+        public async Task<Tag> ListaTagId(int id)
+        {
+            var listaTag = await _dbContext.Tags.Where(x => x.Id == id).FirstOrDefaultAsync();
+
+            return listaTag;
+        }
+
         public async Task<List<Tag>> ListaTag()
         {
             var listaTag = await _dbContext.Tags.AsNoTracking().OrderByDescending(x => x.Id).ToListAsync();
 
             return listaTag;
         }
-
-        public async Task<Tag> ListaTagId(int id)
-        {
-           var listaTag = await _dbContext.Tags.Where(x => x.Id == id).FirstOrDefaultAsync();
-
-           return listaTag;
-        }
-
+        
         public async Task<bool> TagVinculada(int idNoticia)
         {
 

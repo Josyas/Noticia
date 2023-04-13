@@ -17,13 +17,14 @@ namespace ICI.ProvaCandidato.Dados.EntitiesConfiguration
                .HasMaxLength(250);
 
             builder.Property(x => x.Texto)
+               .HasMaxLength(8000)
                .HasColumnType("VARCHAR");
               
             builder.HasOne(x => x.Usuario)
-                .WithMany(x => x.Noticias)
-                .HasForeignKey(x => x.IdUsuario)
-                .HasConstraintName("FK_Noticia_Usuario")
-                .OnDelete(DeleteBehavior.Cascade);
+               .WithMany(x => x.Noticias)
+               .HasForeignKey(x => x.IdUsuario)
+               .HasConstraintName("FK_Noticia_Usuario")
+               .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

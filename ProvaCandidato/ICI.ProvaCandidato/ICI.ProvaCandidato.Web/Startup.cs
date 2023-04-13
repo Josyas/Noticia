@@ -31,11 +31,19 @@ namespace ICI.ProvaCandidato.Web
 			services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>();
             services.AddScoped<ITagRepositorio, TagRepositorio>();
+            services.AddScoped<INoticiaRepositorio, NoticiaRepositorio>();
+            services.AddScoped<IUsuarioRepositorio, UsuarioRepositorio>();
             services.AddScoped<ITagService, TagService>();
+            services.AddScoped<INoticiaService, NoticiaService>();
+            services.AddScoped<IUsuarioService, UsuarioService>();
             services.AddScoped<ITagModel, TagModel>();
-            services.AddAutoMapper(cfg =>
+            services.AddScoped<INoticiaModel, NoticiaModel>();
+            services.AddScoped<IUsuarioModel, UsuarioModel>();
+            services.AddAutoMapper(dto =>
             {
-                cfg.CreateMap<TagDTO, Tag>();
+                dto.CreateMap<TagDTO, Tag>();
+				dto.CreateMap<NoticiaDTO, Noticia>();
+                dto.CreateMap<UsuarioDTO, Usuario>();
             }, Assembly.GetExecutingAssembly());
         }
 
