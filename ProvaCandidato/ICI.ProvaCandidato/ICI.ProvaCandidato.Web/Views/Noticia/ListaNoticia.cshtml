@@ -1,0 +1,138 @@
+﻿@using ICI.ProvaCandidato.Web.AutoMapper.DTO;
+@*@using ICI.ProvaCandidato.Web.AutoMapper.DTO;
+@model List<NoticiaDTO>
+
+<h2>Lista de Notícias</h2>
+
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["AlertMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <script>
+            setTimeout(function () {
+                $(".alert").alert('close');
+            }, 4000);
+        </script>
+    </div>
+}
+
+<table id="myTable" class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Título</th>
+            <th>Texto</th>
+            <th>Autor</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var noticia in Model)
+        {
+            <tr>
+                <td>@noticia.Id</td>
+                <td>@noticia.Titulo</td>
+                <td>@noticia.Texto</td>
+                <td>@noticia.IdUsuario</td>
+            </tr>
+        }
+    </tbody>
+</table>*@
+
+@model List<NoticiaDTO>
+
+<h2>Lista de Notícias</h2>
+
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        @TempData["AlertMessage"]
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <script>
+            setTimeout(function () {
+                $(".alert").alert('close');
+            }, 4000);
+        </script>
+    </div>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Título</th>
+            <th>Texto</th>
+            <th>Autor</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var noticia in Model)
+        {
+            <tr>
+                <td>@noticia.Id</td>
+                <td>@noticia.Titulo</td>
+                <td>@noticia.Texto</td>
+                <td>@noticia.IdUsuario</td>
+                <td>
+                    <form asp-action="ApagarNoticia" method="post">
+                        <input type="hidden" name="id" value="@noticia.Id" />
+                        <button type="submit" class="btn btn-danger">Apagar</button>
+                    </form>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalEditarNoticia" data-id="@noticia.Id" data-titulo="@noticia.Titulo" data-texto="@noticia.Texto" data-autor="@noticia.IdUsuario">Editar</button>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<div class="modal fade" id="modalEditarNoticia" tabindex="-1" role="dialog" aria-labelledby="modalEditarNoticiaLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalEditarNoticiaLabel">Editar Notícia</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form asp-action="EditarNoticia" method="post">
+                <div class="modal-body">
+                    <input type="hidden" name="id" id="editarNoticiaId" />
+                    <div class="form-group">
+                        <label for="editarNoticiaTitulo">Título</label>
+                        <input type="text" class="form-control" name="titulo" id="editarNoticiaTitulo" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="editarNoticiaTexto">Texto</label>
+                        <input type="text" class="form-control" name="texto" id="editarNoticiaTexto" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="editarNoticiaAutor">Autor</label>
+                        <input type="text" class="form-control" name="autor" id="editarNoticiaAutor" required />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Salvar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+               $("#modalEditarNoticia").on("show.bs.modal", function (event) { }
+    </script>
+}
+   
+
+
+

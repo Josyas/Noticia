@@ -31,9 +31,36 @@ namespace ICI.ProvaCandidato.Negocio.Service
                 }
             };
 
+            if (noticia == null)
+                return noticia;
+
             await _noticiaRepositorio.IncluirNoticia(noticia);
 
             return noticia;
+        }
+
+        public async Task<Noticia> EditarNoticia(Noticia noticia)
+        {
+            if (noticia == null)
+                return noticia;
+
+            var alterarNoticia = await _noticiaRepositorio.AlterarNoticia(noticia);
+
+            return alterarNoticia;
+        }
+
+        public async Task ApagarNoticia(int id)
+        {
+            var noticiaId = await _noticiaRepositorio.ListaNoticiaId(id);
+
+            await _noticiaRepositorio.ExcluirNoticia(noticiaId);
+        }
+
+        public async Task<List<Noticia>> ListaNoticia()
+        {
+            var listaNoticia = await _noticiaRepositorio.ListaNoticia();
+
+            return listaNoticia;
         }
     }
 }

@@ -24,6 +24,9 @@ namespace ICI.ProvaCandidato.Negocio.Service
                 Email = email
             };
 
+            if(usuario == null)
+                return usuario;
+
             await _usuarioRepositorio.IncluirUsuario(usuario);
 
             return usuario;

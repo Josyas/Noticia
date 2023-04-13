@@ -21,9 +21,16 @@ namespace ICI.ProvaCandidato.Web.Controllers
 
         public async Task<ActionResult> CadastrarUsuario(UsuarioDTO usuarioDTO)
         {
-            await _usuarioModel.CadastraUsuario(usuarioDTO.Nome, usuarioDTO.Email, usuarioDTO.Senha);
+            if (ModelState.IsValid)
+            {
+                await _usuarioModel.CadastraUsuario(usuarioDTO.Nome, usuarioDTO.Email, usuarioDTO.Senha);
 
-            TempData["AlertMessage"] = "Tag cadastrada com sucesso!";
+                TempData["AlertMessage"] = "Tag cadastrada com sucesso!";
+
+                return RedirectPermanent("https://localhost:44340/Usuario");
+            }
+
+            TempData["AlertMessage"] = "Erro ao cadastradar usuario.";
 
             return RedirectPermanent("https://localhost:44340/Usuario");
         }

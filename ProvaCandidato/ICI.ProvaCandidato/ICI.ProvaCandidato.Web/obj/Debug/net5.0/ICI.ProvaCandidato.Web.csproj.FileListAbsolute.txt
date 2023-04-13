@@ -201,3 +201,4 @@ C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandi
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.pdb
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ICI.ProvaCandidato.Web.genruntimeconfig.cache
 C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\ref\ICI.ProvaCandidato.Web.dll
+C:\Users\josia\Desktop\TesteICI\ProvaCandidato - 1\ProvaCandidato\ICI.ProvaCandidato\ICI.ProvaCandidato.Web\obj\Debug\net5.0\Razor\Views\Noticia\ListaNoticia.cshtml.g.cs

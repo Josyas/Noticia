@@ -22,6 +22,9 @@ namespace ICI.ProvaCandidato.Negocio.Service
                Descricao = descricao
             };
 
+            if (tag == null)
+                return tag;
+
             await _tagRepositorio.IncluirTag(tag);
 
             return tag;

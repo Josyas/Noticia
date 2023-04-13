@@ -19,25 +19,30 @@ namespace ICI.ProvaCandidato.Dados.Repository
         public async Task IncluirUsuario(Usuario usuario)
         {
             _dbContext.Add(usuario);
+
             await _dbContext.SaveChangesAsync();
         }
 
         public async Task<Usuario> AlterarUsuario(Usuario usuario)
         {
             _dbContext.Entry(usuario).State = EntityState.Modified;
+
             await _dbContext.SaveChangesAsync();
+
             return usuario;
         }
 
         public async Task ExcluirUsuario(Usuario usuario)
         {
             _dbContext.Remove(usuario);
+
             await _dbContext.SaveChangesAsync();
         }
 
         public async Task<List<Usuario>> ListaUsuario()
         {
             var listaUsuario = await _dbContext.Usuarios.Include(x => x.Noticias).ToListAsync();
+
             return listaUsuario;
         }
     }

@@ -36,7 +36,7 @@ namespace ICI.ProvaCandidato.Web.Controllers
 
             TempData["AlertMessage"] = "nome da tag já está em uso.";
 
-            return RedirectPermanent("https://localhost:44340/Tag");
+            return RedirectToAction("Tag");
         }
 
         public async Task<ActionResult> ApagarTag(int id)
@@ -49,12 +49,12 @@ namespace ICI.ProvaCandidato.Web.Controllers
 
                 TempData["AlertMessage"] = "Tag apagado com sucesso.";
 
-                return Redirect("https://localhost:44340/Tag/ListaTags");
+                return RedirectToAction("ListaTags");
             }
 
             TempData["AlertMessage"] = "Tag está vinculada a uma notícia.";
 
-            return Redirect("https://localhost:44340/Tag/ListaTags");
+            return RedirectToAction("ListaTags");
         }
 
         [HttpPost]
