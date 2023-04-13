@@ -22,20 +22,36 @@
         @Html.LabelFor(m => m.Titulo, new { @class = "control-label" })
         @Html.TextBoxFor(m => m.Titulo, new { @class = "form-control", required = "required" })
         @Html.LabelFor(m => m.Texto, new { @class = "control-label" })
-        @Html.TextBoxFor(m => m.Texto, new { @class = "form-control", required = "required" })
+        @Html.TextAreaFor(m => m.Texto, new { @class = "form-control", rows = 5, cols = 50 })
         @Html.ValidationMessageFor(m => m.Titulo, "", new { @class = "text-danger" })
         @Html.ValidationMessageFor(m => m.Texto, "", new { @class = "text-danger" })
-        @Html.LabelFor(m => m.UsuarioSelecionadoId)
-        @Html.DropDownListFor(m => m.UsuarioSelecionadoId, new SelectList(Model.Usuarios, "Id", "Nome"), "-- Selecione --", new { @class = "form-control" })
     </div>
-   @* <div>
-    @using (Html.BeginForm("Index", "Noticia", FormMethod.Post))
-    {
-        @Html.LabelFor(m => m.UsuarioSelecionadoId)
-        @Html.DropDownListFor(m => m.UsuarioSelecionadoId, new SelectList(Model.Usuarios, "Id", "Nome"), "-- Selecione --", new { @class = "form-control" })
-    }
-    </div>*@
-  
+    <div>
+        <br />
+        @if(Model.Usuarios != null && Model.Usuarios.Any())
+        {
+            <p>autor</p>
+            @Html.DropDownListFor(m => m.UsuarioSelecionadoId, new SelectList(Model.Usuarios, "Id", "Nome"), "-- Selecione --", new { @class = "form-control" })
+        }
+        else
+        {
+            <br />  
+            <p>Nenhuma tag encontrada.</p>
+        }
+    </div>
+    <div>
+        <br />
+        @if(Model.Tags != null && Model.Tags.Any())
+        {
+             <p>tag</p>
+             @Html.DropDownListFor(m => m.TagSelecionadoId, new SelectList(Model.Tags, "Id", "Descricao"), "-- Selecione --", new { @class = "form-control" })
+        }
+        else
+        {
+            <br />
+            <p>Nenhuma tag encontrada.</p>
+        }
+    </div>
     <div>
         <br />
         <button type="submit" class="btn btn-primary">Salvar</button>

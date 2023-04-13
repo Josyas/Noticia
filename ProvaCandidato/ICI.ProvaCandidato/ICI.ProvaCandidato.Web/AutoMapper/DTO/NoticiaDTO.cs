@@ -12,5 +12,7 @@ namespace ICI.ProvaCandidato.Web.AutoMapper.DTO
         public int IdUsuario { get; set; }
         public List<Usuario> Usuarios { get; set; }
         public int UsuarioSelecionadoId { get; set; }
+        public List<Tag> Tags { get; set; }
+        public int TagSelecionadoId { get; set; }
     }
 }

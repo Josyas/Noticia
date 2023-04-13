@@ -49,7 +49,7 @@ namespace ICI.ProvaCandidato.Dados.Repository
 
         public async Task<List<Tag>> ListaTag()
         {
-            var listaTag = await _dbContext.Tags.AsNoTracking().OrderByDescending(x => x.Id).ToListAsync();
+            var listaTag = await _dbContext.Tags.AsNoTracking().ToListAsync();
 
             return listaTag;
         }

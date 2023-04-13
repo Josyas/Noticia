@@ -13,8 +13,8 @@ namespace ICI.ProvaCandidato.Web.Models
         {
             _noticiaService = noticiaService;
         }
-
-        public async Task<Noticia> CadastrarNoticia(string titulo, string texto, int idTag, int idUsuario)
+          
+        public async Task<Noticia> CadastrarNoticia(string titulo, string texto,int idTag, int idUsuario)
         {
             var noticiaCadastro = await _noticiaService.CadastrarNoticia(titulo, texto, idTag, idUsuario);
 

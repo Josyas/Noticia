@@ -48,6 +48,8 @@ namespace ICI.ProvaCandidato.Web.Controllers
                 await _tagModel.ApagarTagId(id);
 
                 TempData["AlertMessage"] = "Tag apagado com sucesso.";
+
+                return Redirect("https://localhost:44340/Tag/ListaTags");
             }
 
             TempData["AlertMessage"] = "Tag está vinculada a uma notícia.";
